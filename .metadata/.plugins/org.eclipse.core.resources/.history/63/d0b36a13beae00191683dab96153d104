@@ -1,0 +1,35 @@
+package com.exampleOne;
+
+public class App {
+	public static void main(String args[]) {
+		
+		StockPrice.printAll();
+		
+		StockPrice.addPrice("Ki", 100.00);
+		StockPrice.addPrice("Ki", 200.00);
+		StockPrice.addPrice("Pooja", 300.00);
+		StockPrice.addPrice("Sanmith", 2100.00);
+		StockPrice.addPrice("Ankur", 2300.00);
+		StockPrice.addPrice("Purbid", 700.00);
+		StockPrice.addPrice("Pooja", 200.00);
+		StockPrice.addPrice("Ankur", 200.00);
+		StockPrice.addPrice("Sanmith", 800.00);
+		StockPrice.addPrice("Purbid", 100.00);
+		StockPrice.addPrice("Ki", 900.00);
+		StockPrice.addPrice("Ankur", 1200.00);
+		StockPrice.addPrice("Purbid", 900.00);
+		
+		StockPrice.getAverage("Ki");
+		StockPrice.getTicks("Ki");
+		StockPrice.getAverage("Pooja");
+		StockPrice.getTicks("Pooja");
+		StockPrice.getAverage("Ankure");
+		StockPrice.getTicks("Ankur");
+		StockPrice.getAverage("Sanmith");
+		StockPrice.getTicks("Sanmith");
+		StockPrice.getAverage("Purbid");
+		StockPrice.getTicks("Purbid");
+//		StockPrice.test();
+		StockPrice.printAll();
+	}
+}

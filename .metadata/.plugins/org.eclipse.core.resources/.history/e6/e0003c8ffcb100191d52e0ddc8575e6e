@@ -1,0 +1,7 @@
+import org.springframework.stereotype.Repository;
+
+package com.example.repository;
+@Repository
+public class CountryRepository extends JpaRepository<Country,Integer>{
+
+}

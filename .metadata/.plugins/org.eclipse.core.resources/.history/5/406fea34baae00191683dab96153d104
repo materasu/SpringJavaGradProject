@@ -1,0 +1,9 @@
+package com.example;
+
+public class App {
+	public static void main(String args[]) {
+		StockPrice.addPrice("Ki", 100.00);
+		StockPrice.addPrice("Ki", 200.00);
+		StockPrice.printAll();
+	}
+}

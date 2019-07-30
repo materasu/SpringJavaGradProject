@@ -1,0 +1,23 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+import com.example.controller.CountryController;
+import com.example.model.Country;
+import com.example.repository.CountryRepository;
+
+@SpringBootApplication
+@EnableJpaRepositories(basePackageClasses= {CountryRepository.class})
+//@ComponentScan(basePackageClasses = {Country.class, CountryRepository.class, CountryController.class})
+@EnableAutoConfiguration
+public class DemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+	}
+
+}
